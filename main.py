@@ -61,7 +61,7 @@ class SupersetTester(QMainWindow):
             if pixmap.isNull():
                 raise Exception("Logo couldn't be loaded")
             logo.setPixmap(pixmap.scaled(200, 80, Qt.KeepAspectRatio, Qt.SmoothTransformation))
-            logo.setStyleSheet("background-color: white; padding: 5px; border-radius: 4px;")
+            #logo.setStyleSheet("background-color: white; padding: 5px; border-radius: 4px;")
         except Exception as e:
             print(f"Error loading logo: {str(e)}")
             # Fallback if logo is not found
